@@ -983,99 +983,115 @@
       <h2 class="text-center text-3xl font-extrabold text-foreground sm:text-4xl">
        Perguntas frequentes
       </h2>
-      <div class="mt-10 space-y-3" data-orientation="vertical">
-       <div class="rounded-2xl border-0 bg-card px-6 shadow-card" data-orientation="vertical" data-state="closed">
-        <h3 class="flex" data-orientation="vertical" data-state="closed">
-         <button aria-controls="radix-:r1:" aria-expanded="false" class="flex flex-1 items-center justify-between py-4 transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 text-left text-base font-bold text-foreground hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-:r0:" type="button">
+      <div class="mt-10 space-y-3" id="faq-accordion">
+       <div class="faq-item rounded-2xl border-0 bg-card px-6 shadow-card">
+        <h3 class="flex">
+         <button class="faq-btn flex flex-1 items-center justify-between py-4 text-left text-base font-bold text-foreground transition-all hover:no-underline" type="button" aria-expanded="false">
           Isso é um curso de teologia?
-          <svg class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-           <path d="m6 9 6 6 6-6">
-           </path>
-          </svg>
+          <svg class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg>
          </button>
         </h3>
-        <div aria-labelledby="radix-:r0:" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" data-orientation="vertical" data-state="closed" hidden="" id="radix-:r1:" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+        <div class="faq-panel overflow-hidden text-sm text-muted-foreground" style="max-height:0;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease;opacity:0;">
+         <div class="pb-4">Não. O material ensina como pensar sobre a fé, não teologia acadêmica nem respostas prontas.</div>
         </div>
        </div>
-       <div class="rounded-2xl border-0 bg-card px-6 shadow-card" data-orientation="vertical" data-state="closed">
-        <h3 class="flex" data-orientation="vertical" data-state="closed">
-         <button aria-controls="radix-:r3:" aria-expanded="false" class="flex flex-1 items-center justify-between py-4 transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 text-left text-base font-bold text-foreground hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-:r2:" type="button">
+       <div class="faq-item rounded-2xl border-0 bg-card px-6 shadow-card">
+        <h3 class="flex">
+         <button class="faq-btn flex flex-1 items-center justify-between py-4 text-left text-base font-bold text-foreground transition-all hover:no-underline" type="button" aria-expanded="false">
           É necessário seguir uma ordem ou calendário?
-          <svg class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-           <path d="m6 9 6 6 6-6">
-           </path>
-          </svg>
+          <svg class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg>
          </button>
         </h3>
-        <div aria-labelledby="radix-:r2:" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" data-orientation="vertical" data-state="closed" hidden="" id="radix-:r3:" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+        <div class="faq-panel overflow-hidden text-sm text-muted-foreground" style="max-height:0;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease;opacity:0;">
+         <div class="pb-4">Sim. O material foi pensado para uma pergunta por semana, mas pode ser adaptado à rotina da família.</div>
         </div>
        </div>
-       <div class="rounded-2xl border-0 bg-card px-6 shadow-card" data-orientation="vertical" data-state="closed">
-        <h3 class="flex" data-orientation="vertical" data-state="closed">
-         <button aria-controls="radix-:r5:" aria-expanded="false" class="flex flex-1 items-center justify-between py-4 transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 text-left text-base font-bold text-foreground hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-:r4:" type="button">
+       <div class="faq-item rounded-2xl border-0 bg-card px-6 shadow-card">
+        <h3 class="flex">
+         <button class="faq-btn flex flex-1 items-center justify-between py-4 text-left text-base font-bold text-foreground transition-all hover:no-underline" type="button" aria-expanded="false">
           Isso substitui a igreja ou a escola bíblica?
-          <svg class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-           <path d="m6 9 6 6 6-6">
-           </path>
-          </svg>
+          <svg class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg>
          </button>
         </h3>
-        <div aria-labelledby="radix-:r4:" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" data-orientation="vertical" data-state="closed" hidden="" id="radix-:r5:" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+        <div class="faq-panel overflow-hidden text-sm text-muted-foreground" style="max-height:0;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease;opacity:0;">
+         <div class="pb-4">Não. Ele complementa, ajudando a criança a pensar melhor sobre o que aprende em outros lugares.</div>
         </div>
        </div>
-       <div class="rounded-2xl border-0 bg-card px-6 shadow-card" data-orientation="vertical" data-state="closed">
-        <h3 class="flex" data-orientation="vertical" data-state="closed">
-         <button aria-controls="radix-:r7:" aria-expanded="false" class="flex flex-1 items-center justify-between py-4 transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 text-left text-base font-bold text-foreground hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-:r6:" type="button">
+       <div class="faq-item rounded-2xl border-0 bg-card px-6 shadow-card">
+        <h3 class="flex">
+         <button class="faq-btn flex flex-1 items-center justify-between py-4 text-left text-base font-bold text-foreground transition-all hover:no-underline" type="button" aria-expanded="false">
           O conteúdo é todo digital?
-          <svg class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-           <path d="m6 9 6 6 6-6">
-           </path>
-          </svg>
+          <svg class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg>
          </button>
         </h3>
-        <div aria-labelledby="radix-:r6:" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" data-orientation="vertical" data-state="closed" hidden="" id="radix-:r7:" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+        <div class="faq-panel overflow-hidden text-sm text-muted-foreground" style="max-height:0;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease;opacity:0;">
+         <div class="pb-4">Sim. Todo o material é digital, pode ser acessado em celular, tablet, computador e também impresso, se a família preferir.</div>
         </div>
        </div>
-       <div class="rounded-2xl border-0 bg-card px-6 shadow-card" data-orientation="vertical" data-state="closed">
-        <h3 class="flex" data-orientation="vertical" data-state="closed">
-         <button aria-controls="radix-:r9:" aria-expanded="false" class="flex flex-1 items-center justify-between py-4 transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 text-left text-base font-bold text-foreground hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-:r8:" type="button">
+       <div class="faq-item rounded-2xl border-0 bg-card px-6 shadow-card">
+        <h3 class="flex">
+         <button class="faq-btn flex flex-1 items-center justify-between py-4 text-left text-base font-bold text-foreground transition-all hover:no-underline" type="button" aria-expanded="false">
           O acesso é por quanto tempo?
-          <svg class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-           <path d="m6 9 6 6 6-6">
-           </path>
-          </svg>
+          <svg class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg>
          </button>
         </h3>
-        <div aria-labelledby="radix-:r8:" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" data-orientation="vertical" data-state="closed" hidden="" id="radix-:r9:" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+        <div class="faq-panel overflow-hidden text-sm text-muted-foreground" style="max-height:0;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease;opacity:0;">
+         <div class="pb-4">O acesso é vitalício. Você pode assistir às aulas quando e quantas vezes quiser.</div>
         </div>
        </div>
-       <div class="rounded-2xl border-0 bg-card px-6 shadow-card" data-orientation="vertical" data-state="closed">
-        <h3 class="flex" data-orientation="vertical" data-state="closed">
-         <button aria-controls="radix-:rb:" aria-expanded="false" class="flex flex-1 items-center justify-between py-4 transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 text-left text-base font-bold text-foreground hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-:ra:" type="button">
+       <div class="faq-item rounded-2xl border-0 bg-card px-6 shadow-card">
+        <h3 class="flex">
+         <button class="faq-btn flex flex-1 items-center justify-between py-4 text-left text-base font-bold text-foreground transition-all hover:no-underline" type="button" aria-expanded="false">
           Posso acessar pelo celular?
-          <svg class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-           <path d="m6 9 6 6 6-6">
-           </path>
-          </svg>
+          <svg class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg>
          </button>
         </h3>
-        <div aria-labelledby="radix-:ra:" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" data-orientation="vertical" data-state="closed" hidden="" id="radix-:rb:" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+        <div class="faq-panel overflow-hidden text-sm text-muted-foreground" style="max-height:0;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease;opacity:0;">
+         <div class="pb-4">Sim. O curso funciona em celular, tablet ou computador.</div>
         </div>
        </div>
-       <div class="rounded-2xl border-0 bg-card px-6 shadow-card" data-orientation="vertical" data-state="closed">
-        <h3 class="flex" data-orientation="vertical" data-state="closed">
-         <button aria-controls="radix-:rd:" aria-expanded="false" class="flex flex-1 items-center justify-between py-4 transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 text-left text-base font-bold text-foreground hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-:rc:" type="button">
+       <div class="faq-item rounded-2xl border-0 bg-card px-6 shadow-card">
+        <h3 class="flex">
+         <button class="faq-btn flex flex-1 items-center justify-between py-4 text-left text-base font-bold text-foreground transition-all hover:no-underline" type="button" aria-expanded="false">
           E se eu não gostar do curso?
-          <svg class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-           <path d="m6 9 6 6 6-6">
-           </path>
-          </svg>
+          <svg class="faq-icon h-4 w-4 shrink-0 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg>
          </button>
         </h3>
-        <div aria-labelledby="radix-:rc:" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" data-orientation="vertical" data-state="closed" hidden="" id="radix-:rd:" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+        <div class="faq-panel overflow-hidden text-sm text-muted-foreground" style="max-height:0;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease;opacity:0;">
+         <div class="pb-4">Você tem 90 dias de garantia. Se não gostar, devolvemos 100% do seu dinheiro.</div>
         </div>
        </div>
       </div>
+      <script>
+        (function() {
+          var accordion = document.getElementById('faq-accordion');
+          accordion.addEventListener('click', function(e) {
+            var btn = e.target.closest('.faq-btn');
+            if (!btn) return;
+            var item = btn.closest('.faq-item');
+            var panel = item.querySelector('.faq-panel');
+            var icon = btn.querySelector('.faq-icon');
+            var isOpen = btn.getAttribute('aria-expanded') === 'true';
+            // Fechar todos
+            accordion.querySelectorAll('.faq-item').forEach(function(it) {
+              var b = it.querySelector('.faq-btn');
+              var p = it.querySelector('.faq-panel');
+              var ic = it.querySelector('.faq-icon');
+              b.setAttribute('aria-expanded', 'false');
+              p.style.maxHeight = '0';
+              p.style.opacity = '0';
+              ic.style.transform = 'rotate(0deg)';
+            });
+            // Abrir o clicado se estava fechado
+            if (!isOpen) {
+              btn.setAttribute('aria-expanded', 'true');
+              panel.style.maxHeight = panel.scrollHeight + 'px';
+              panel.style.opacity = '1';
+              icon.style.transform = 'rotate(180deg)';
+            }
+          });
+        })();
+      </script>
      </div>
     </section>
     <section class="bg-gradient-primary py-16 text-primary-foreground">
@@ -1154,13 +1170,12 @@
       e.preventDefault();
       var start = window.scrollY;
       var end = target.getBoundingClientRect().top + start - 8;
-      var duration = 600;
-      var startTime = null;
+      var duration = 400;
+      var startTime = performance.now();
       function easeInOutQuart(t) {
         return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t;
       }
       function step(ts) {
-        if (!startTime) startTime = ts;
         var elapsed = ts - startTime;
         var progress = Math.min(elapsed / duration, 1);
         window.scrollTo(0, start + (end - start) * easeInOutQuart(progress));

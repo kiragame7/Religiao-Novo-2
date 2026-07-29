@@ -1062,36 +1062,7 @@
         </div>
        </div>
       </div>
-      <script>
-        (function() {
-          var accordion = document.getElementById('faq-accordion');
-          accordion.addEventListener('click', function(e) {
-            var btn = e.target.closest('.faq-btn');
-            if (!btn) return;
-            var item = btn.closest('.faq-item');
-            var panel = item.querySelector('.faq-panel');
-            var icon = btn.querySelector('.faq-icon');
-            var isOpen = btn.getAttribute('aria-expanded') === 'true';
-            // Fechar todos
-            accordion.querySelectorAll('.faq-item').forEach(function(it) {
-              var b = it.querySelector('.faq-btn');
-              var p = it.querySelector('.faq-panel');
-              var ic = it.querySelector('.faq-icon');
-              b.setAttribute('aria-expanded', 'false');
-              p.style.maxHeight = '0';
-              p.style.opacity = '0';
-              ic.style.transform = 'rotate(0deg)';
-            });
-            // Abrir o clicado se estava fechado
-            if (!isOpen) {
-              btn.setAttribute('aria-expanded', 'true');
-              panel.style.maxHeight = panel.scrollHeight + 'px';
-              panel.style.opacity = '1';
-              icon.style.transform = 'rotate(180deg)';
-            }
-          });
-        })();
-      </script>
+
      </div>
     </section>
     <section class="bg-gradient-primary py-16 text-primary-foreground">
@@ -1222,6 +1193,46 @@
     } else {
       startCountdown();
     }
+  </script>
+  <script>
+    // Accordion FAQ
+    document.addEventListener('DOMContentLoaded', function() {
+      var accordion = document.getElementById('faq-accordion');
+      if (!accordion) return;
+
+      // Pre-calcular altura de cada painel antes de esconder
+      accordion.querySelectorAll('.faq-panel').forEach(function(panel) {
+        panel.dataset.height = panel.scrollHeight + 'px';
+        panel.style.maxHeight = '0px';
+        panel.style.opacity = '0';
+      });
+
+      accordion.addEventListener('click', function(e) {
+        var btn = e.target.closest('.faq-btn');
+        if (!btn) return;
+        var item = btn.closest('.faq-item');
+        var panel = item.querySelector('.faq-panel');
+        var icon = btn.querySelector('.faq-icon');
+        var isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+        // Fechar todos
+        accordion.querySelectorAll('.faq-item').forEach(function(it) {
+          it.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+          it.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+          var p = it.querySelector('.faq-panel');
+          p.style.maxHeight = '0px';
+          p.style.opacity = '0';
+        });
+
+        // Abrir o clicado se estava fechado
+        if (!isOpen) {
+          btn.setAttribute('aria-expanded', 'true');
+          icon.style.transform = 'rotate(180deg)';
+          panel.style.maxHeight = panel.dataset.height;
+          panel.style.opacity = '1';
+        }
+      });
+    });
   </script>
  </body>
 </html>

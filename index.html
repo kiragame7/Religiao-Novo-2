@@ -1200,13 +1200,6 @@
       var accordion = document.getElementById('faq-accordion');
       if (!accordion) return;
 
-      // Pre-calcular altura de cada painel antes de esconder
-      accordion.querySelectorAll('.faq-panel').forEach(function(panel) {
-        panel.dataset.height = panel.scrollHeight + 'px';
-        panel.style.maxHeight = '0px';
-        panel.style.opacity = '0';
-      });
-
       accordion.addEventListener('click', function(e) {
         var btn = e.target.closest('.faq-btn');
         if (!btn) return;
@@ -1228,7 +1221,13 @@
         if (!isOpen) {
           btn.setAttribute('aria-expanded', 'true');
           icon.style.transform = 'rotate(180deg)';
-          panel.style.maxHeight = panel.dataset.height;
+          // Medir altura real no momento do clique (após fechar os outros)
+          panel.style.maxHeight = 'none';
+          var realHeight = panel.scrollHeight;
+          panel.style.maxHeight = '0px';
+          // Forçar reflow para a transição funcionar
+          panel.offsetHeight;
+          panel.style.maxHeight = realHeight + 'px';
           panel.style.opacity = '1';
         }
       });

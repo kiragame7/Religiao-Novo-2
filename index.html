@@ -57,7 +57,7 @@
    <div class="min-h-screen bg-gradient-hero">
     <div class="bg-gradient-primary py-2.5 text-center text-xs font-semibold uppercase tracking-wider text-primary-foreground sm:text-sm">
      <div class="container flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-      <span>
+      <span id="offer-date">
        Oferta disponível apenas hoje 29/07/2026
       </span>
      </div>
@@ -1193,6 +1193,20 @@
     } else {
       startCountdown();
     }
+  </script>
+  <script>
+    // Atualizar data dinâmica
+    (function() {
+      var offerDateEl = document.getElementById('offer-date');
+      if (offerDateEl) {
+        var today = new Date();
+        var day = String(today.getDate()).padStart(2, '0');
+        var month = String(today.getMonth() + 1).padStart(2, '0');
+        var year = today.getFullYear();
+        var formattedDate = day + '/' + month + '/' + year;
+        offerDateEl.textContent = 'Oferta disponível apenas hoje ' + formattedDate;
+      }
+    })();
   </script>
   <script>
     // Accordion FAQ
